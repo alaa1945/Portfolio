@@ -31,8 +31,11 @@ ul {
   margin-left: 70px;
   font-size: 1.8rem;
 }
-.left-nav h1 span {
+h1 span {
   color: crimson;
+}
+.firstintro {
+  line-height: 60px;
 }
 .right-nav {
   position: absolute;
@@ -40,8 +43,7 @@ ul {
   font-size: 1.4rem;
 }
 .right-nav a:hover {
-  opacity: 0.5;
-  font-size: 1.5rem;
+  color: crimson;
 }
 #welcome-section {
   height: 100vh;
@@ -50,24 +52,67 @@ ul {
 }
 .intro {
   color: aliceblue;
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin-top: 50px;
+  width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#welcome-section h1:nth-child(3) {
-  color: crimson;
+.btn {
+  margin-top: 50px;
 }
-#welcome-section p {
-  font-size: 1.3rem;
-  margin: 30px 0;
-  color: crimson;
+.btn a {
+  color: white;
+  background-color: rgb(187, 22, 55);
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn a:hover {
+  opacity: 0.8;
 }
 .hl {
-  height: 275px;
+  height: 300px;
 }
+
+/* Services */
+.stitle {
+  color: hsl(192, 84%, 20%);
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2.7rem;
+}
+#services {
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+}
+.service1 h1 {
+  padding: 10px;
+}
+.s1 {
+  margin-top: 12px;
+}
+.service1 {
+  background-color: white;
+  border: 1px solid ghostwhite;
+  border-radius: 20px;
+  box-shadow: 0px 0px 18px #0000002c;
+  width: 14%;
+  text-align: center;
+  padding: 7px;
+  margin: 20px;
+  color: hsl(192, 87%, 15%);
+}
+.service1:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+/* End services */
+
 /* Projects */
 #projects {
   background-color: white;
@@ -88,13 +133,16 @@ ul {
 .project {
   width: auto;
   background-color: hsl(192, 100%, 9%);
+  border-radius: 10px;
 }
 .project img {
   width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .project h2 {
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   text-transform: capitalize;
 }
@@ -147,9 +195,9 @@ footer {
 }
 .socialmedia-icons img:hover {
   transform: scale(1.5);
-} 
+}
 .contact-us-right {
-  margin-top:20px;
+  margin-top: 20px;
   margin-left: 200px;
   width: 24%;
 }
@@ -176,10 +224,10 @@ footer {
   border-radius: 5px;
   margin-left: 20px;
   border: 1px solid pink;
-  background-color: rgb(255, 102, 128);
+  background-color: crimson;
   color: white;
 }
-#subscribe-btn:hover{
+#subscribe-btn:hover {
   opacity: 0.7;
 }
 /*  */
@@ -206,74 +254,84 @@ footer {
     font-size: 1.7rem;
     width: 80%;
   }
+  #services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service1 {
+    width: 70%;
+  }
   .project {
     margin: 20px 50px;
     width: 350px;
   }
-  .projects-list{
-    display:flex;
+  .projects-list {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
- .contact-us {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  color: white;
-}
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+  }
 
-.contact-us-left {
-  margin: 0 ;
-  width: 100%;
+  .contact-us-left {
+    margin: 0;
+    width: 100%;
+  }
+  .contact-us-right {
+    padding: 0 60px;
+    margin: 0;
+    width: 100%;
+  }
+  #form {
+    display: flex;
+    flex-direction: column;
+  }
+  #input {
+    width: 70%;
+  }
+  #subscribe-btn {
+    padding: 10px;
+    width: 30%;
+    margin: 10px 160px;
+  }
 }
-.contact-us-right {
-  padding: 0 60px;
-  margin: 0 ;
-  width: 100%;
-}
-#form{
-  display: flex;
-  flex-direction: column;
-}
-#input {
-  width: 70%;
-}
-#subscribe-btn {
-  padding:10px;
-  width:30%;
-  margin:10px 160px ;
-}
-}
-@media (max-width: 768px){
- .contact-us {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  color: white;
-}
+@media (max-width: 768px) {
+  .service1 {
+    width: 80%;
+  }
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+  }
 
-.contact-us-left {
-  margin: 0 ;
-  width: 100%;
-}
-.contact-us-right {
-  padding: 0 60px;
-  margin: 20px 0 ;
-  width: 80%;
-}
-.projects-list{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
- 
-}
-.project {
-margin:20px 0;
-}
-.project h2 {
-  padding:10px;
-}
-.hl {
-  height: 230px;
-}
+  .contact-us-left {
+    margin: 0;
+    width: 100%;
+  }
+  .contact-us-right {
+    padding: 0 60px;
+    margin: 20px 0;
+    width: 80%;
+  }
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project {
+    margin: 20px 0;
+  }
+  .project h2 {
+    padding: 10px;
+  }
+  .project img {
+    height: 230px;
+  }
 }
