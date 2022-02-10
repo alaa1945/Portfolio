@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+html {
+  font-size: 13.5px;
   font-family: Arial, Helvetica, sans-serif;
 }
 /* header */
@@ -11,38 +12,12 @@ a {
   text-decoration: none;
   color: white;
 }
-ul {
-  list-style: none;
+.logo {
+  width: 90px;
 }
-#navbar {
-  display: flex;
-  position: fixed;
-  top: 0;
-  background-color: rgba(102, 101, 101, 0.4);
-  width: 100%;
-  height: 90px;
-  line-height: 90px;
-}
-#navbar li {
-  display: inline;
-  padding: 0 20px;
-}
-.left-nav {
-  margin-left: 70px;
-  font-size: 1.8rem;
-}
-h1 span {
-  color: crimson;
-}
-.firstintro {
-  line-height: 60px;
-}
-.right-nav {
-  position: absolute;
-  right: 50px;
-  font-size: 1.4rem;
-}
-.right-nav a:hover {
+.title {
+  margin-left: -385px;
+  font-size: 4rem;
   color: crimson;
 }
 #welcome-section {
@@ -59,6 +34,14 @@ h1 span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  line-height: 40px;
+}
+.parag {
+  margin-top: 10px;
+  line-height: 25px;
+  font-size: 1.2rem;
+  color: aliceblue;
+  width: 80%;
 }
 .btn {
   margin-top: 50px;
@@ -232,25 +215,19 @@ footer {
 }
 /*  */
 @media (max-width: 700px) {
+  .logo {
+    width: 70px;
+  }
+  .title {
+    margin-left: -120px;
+    font-size: 3.1rem;
+  }
   #navbar {
     height: 170px;
     position: inherit;
     background-color: rgb(102, 101, 101);
   }
-  .left-nav {
-    margin: 20px auto;
-  }
-  .right-nav {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-  }
   .intro {
-    /* margin:100px 30px; */
     font-size: 1.7rem;
     width: 80%;
   }
@@ -287,16 +264,20 @@ footer {
     margin: 0;
     width: 100%;
   }
+  .contact-us-right p {
+    width: 300px;
+  }
   #form {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   #input {
-    width: 70%;
+    width: 250px;
   }
   #subscribe-btn {
     padding: 10px;
-    width: 30%;
+    width: 50%;
     margin: 10px 160px;
   }
 }
@@ -334,4 +315,5 @@ footer {
   .project img {
     height: 230px;
   }
+
 }
