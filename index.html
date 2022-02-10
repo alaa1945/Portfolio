@@ -7,37 +7,54 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./images/" />
+
+    <link rel="stylesheet" href="./style2.css" />
   </head>
 
   <body>
     <main id="container">
-      <!-- Header -->
+      <!-- header -->
       <section id="header">
-        <nav id="navbar">
-          <div class="left-nav">
-            <a href="#container">
-              <h1><span>A</span>laa <span>A</span>bi <span>E</span>zzddine</h1>
-            </a>
+        <div class="header container">
+          <div class="nav-bar">
+            <div>
+              <a href="">
+                <img
+                  src="./images/A-arrow-logo-design-2-removebg-preview.png"
+                  alt=""
+                  class="logo"
+              /></a>
+            </div>
+
+            <div class="brand">
+              <a href="#container"><h1 class="title">.A.E</h1></a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger"><div class="bar"></div></div>
+              <ul>
+                <li><a href="#welcome-section" data-after="Home">Home</a></li>
+                <li><a href="#projects" data-after="Projects">Projects</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#footer" data-after="Contact">Contact</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="right-nav">
-            <ul>
-              <li><a href="#welcome-section">Home</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#footer">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
+        </div>
       </section>
-      <!-- End header -->
+
+      <!-- end header -->
 
       <!-- Welcome section -->
       <section id="welcome-section">
         <div class="intro">
           <div class="firstintro">
-            <h5>Hello!</h5>
-            <h1>My name is ,</h1>
-            <h1><span>Alaa</span></h1>
-            <h1>I AM A <span>WEB DEVELOPER</span></h1>
+            <h1>HELLO! I'M <span>ALAA</span></h1>
+            <h5>I AM A <span>WEB DEVELOPER</span></h5>
+            <p class="parag">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              laborum! Nesciunt temporibus provident laudantium eaque.
+              Repudiandae veniam nesciunt minus necessitatibus.
+            </p>
           </div>
           <div class="btn">
             <a href="#">Learn more!</a>
@@ -180,6 +197,7 @@
       </footer>
 
       <!-- End footer -->
+      <script src="./app.js"></script>
     </main>
   </body>
 </html>
