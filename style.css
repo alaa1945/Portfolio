@@ -13,12 +13,7 @@ a {
   color: white;
 }
 .logo {
-  width: 90px;
-}
-.title {
-  margin-left: -385px;
-  font-size: 4rem;
-  color: crimson;
+  padding-left: 10px;
 }
 #welcome-section {
   height: 100vh;
@@ -44,23 +39,19 @@ a {
   width: 80%;
 }
 .btn {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .btn a {
   color: white;
   background-color: rgb(187, 22, 55);
-  padding: 15px;
+  padding: 12px 9px;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 }
 .btn a:hover {
   opacity: 0.8;
 }
-.hl {
-  height: 300px;
-}
-
 /* Services */
 .stitle {
   color: hsl(192, 84%, 20%);
@@ -114,12 +105,13 @@ a {
   margin: 20px;
 }
 .project {
-  width: auto;
+  width: 100%;
   background-color: hsl(192, 100%, 9%);
   border-radius: 10px;
 }
 .project img {
   width: 100%;
+  height: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -155,6 +147,7 @@ footer {
   width: 30%;
   padding: 0 50px;
   margin: 0 60px;
+  margin-left: 100px;
 }
 .contact-us-left p {
   font-weight: 500;
@@ -200,6 +193,7 @@ footer {
   height: 40px;
   width: 90%;
   border-radius: 5px;
+  padding: 10px;
 }
 #subscribe-btn {
   padding: 10px 30px;
@@ -214,13 +208,9 @@ footer {
   opacity: 0.7;
 }
 /*  */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .logo {
-    width: 70px;
-  }
-  .title {
-    margin-left: -120px;
-    font-size: 3.1rem;
+    width: 160px;
   }
   #navbar {
     height: 170px;
@@ -242,6 +232,9 @@ footer {
   .project {
     margin: 20px 50px;
     width: 350px;
+  }
+  .project img {
+    height: 230px;
   }
   .projects-list {
     display: flex;
@@ -273,47 +266,27 @@ footer {
     width: 100%;
   }
   #input {
-    width: 250px;
+    width: 260px;
   }
   #subscribe-btn {
     padding: 10px;
-    width: 50%;
+    width: 100px;
     margin: 10px 160px;
   }
 }
-@media (max-width: 768px) {
-  .service1 {
-    width: 80%;
-  }
+@media (min-width: 768px) {
   .contact-us {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     color: white;
   }
-
-  .contact-us-left {
+  .contact-us-left p {
     margin: 0;
-    width: 100%;
+    padding-left: 15px;
+    width: 300px;
   }
   .contact-us-right {
-    padding: 0 60px;
-    margin: 20px 0;
-    width: 80%;
+    margin-top: 30px;
   }
-  .projects-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .project {
-    margin: 20px 0;
-  }
-  .project h2 {
-    padding: 10px;
-  }
-  .project img {
-    height: 230px;
-  }
-
 }
