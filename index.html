@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="./images/" />
-
-  <link rel="stylesheet" href="./style2.css" />
+  <link rel="shortcut icon" href="./images/logo-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="./Mainstyle.css">
 </head>
 
 <body>
@@ -17,11 +15,10 @@
     <!-- header -->
     <section id="header">
       <div class="header container">
-
         <div class="nav-bar">
           <div>
-            <a href="#container"><img src="./images/logo-removebg-preview.png" alt="A.A.E logo" class="logo"></a></div>
-          
+            <a href="#container"><img src="./images/logo-removebg-preview.png" alt="A.A.E logo" class="logo"></a>
+          </div>
           <div>
             <div class="nav-list">
               <div class="hamburger">
@@ -30,7 +27,7 @@
               <ul>
                 <li><a href="#welcome-section" data-after="Home">Home</a></li>
                 <li><a href="#projects" data-after="Projects">Projects</a></li>
-                <li><a href="#services">Skills</a></li>
+                <li><a href="#services" data-after="Skills">Skills</a></li>
                 <li><a href="#footer" data-after="Contact">Contact</a></li>
               </ul>
             </div>
@@ -44,16 +41,16 @@
     <section id="welcome-section">
       <div class="intro">
         <div class="firstintro">
-          <h1>HELLO! I'M <span>ALAA</span></h1>
-          <h5>I AM A <span>WEB DEVELOPER</span></h5>
+          <h1>Hello! My name is <span>ALAA</span></h1>
+          <h5>I AM A <span>FRONTEND DEVELOPER</span></h5>
           <p class="parag">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
-            laborum! Nesciunt temporibus provident laudantium eaque.
-            Repudiandae veniam nesciunt minus necessitatibus.
+            Welcome to my profile, I'm a freelance front-end developer passionate about creating high-quality landing
+            pages, creative designs, and much more.
           </p>
         </div>
         <div class="btn">
-          <a href="#">Learn more!</a>
+          <a href="#">I need a Website!</a>
+          <a href="#">Hire Me</a>
         </div>
       </div>
     </section>
@@ -124,6 +121,7 @@
     <footer id="footer">
       <div class="contact-us">
         <div class="contact-us-left">
+          <h2>SOCIAL MEDIA</h2>
           <p>
             Visit my social media platforms to see all my projects..!Let's
             work together
@@ -139,20 +137,22 @@
             </div>
           </div>
           <div class="socialmedia-icons">
-            <a href="#"><img src="https://img.icons8.com/ios-glyphs/28/ffffff/facebook.png" /></a>
-            <a href="#">
+            <a href="#" target="_blank"><img src="https://img.icons8.com/ios-glyphs/28/ffffff/facebook.png" /></a>
+            <a href="#" target="_blank">
               <img src="https://img.icons8.com/ios-glyphs/28/ffffff/linkedin.png" /></a>
-            <a href="https://github.com/alaa1945"><img
-                src="https://img.icons8.com/ios-glyphs/28/ffffff/github.png" /></a>
+            <a href="https://github.com/alaa1945" target="_blank">
+              <img src="https://img.icons8.com/ios-glyphs/28/ffffff/github.png" /></a>
+            <a href="https://www.upwork.com/freelancers/~01a73f32d2216d2c08" target="_blank"><img
+                src="https://img.icons8.com/ios-filled/28/ffffff/upwork.png" /></a>
           </div>
         </div>
         <div class="contact-us-right">
           <h2>Email me</h2>
           <p>
             For more information and if you have any questions,kindly send me
-            an email and be ready to answer all of them.
+            an email.
           </p>
-          <form id="form">
+          <form id="form" method="GET" action="mailto:aaework17@gmail.com" enctype="text/plain">
             <input type="text" id="input" placeholder="type here" />
             <input type="submit" id="subscribe-btn" value="Send" />
           </form>
